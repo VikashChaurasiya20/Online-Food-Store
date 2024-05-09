@@ -36,7 +36,8 @@ export class LoginPageComponent implements OnInit {
     //  password: ${this.fc['password'].value}`)
 
      this.userService.login({email:this.fc['email'].value,
-      password : this.fc['password'].value}).subscribe(()=>{
+      password : this.fc['password'].value})
+      .subscribe(()=>{
         this.router.navigateByUrl(this.returnUrl)
       });
   }

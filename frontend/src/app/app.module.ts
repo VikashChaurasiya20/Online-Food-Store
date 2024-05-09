@@ -26,6 +26,7 @@ import { LoadingComponent } from './component/partials/loading/loading.component
 import { LoadingInterceptor } from './shares/interceptor/loading.interceptor';
 import { CheckoutPageComponent } from './component/pages/checkout-page/checkout-page.component';
 import { OrderItemsListComponent } from './component/partials/order-items-list/order-items-list.component';
+import { MapComponent } from './component/partials/map/map.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -45,7 +46,8 @@ import { OrderItemsListComponent } from './component/partials/order-items-list/o
     RegisterPageComponent,
     LoadingComponent,
     CheckoutPageComponent,
-    OrderItemsListComponent
+    OrderItemsListComponent,
+    MapComponent
   ],
   imports: [
     BrowserModule,
