@@ -2,5 +2,6 @@
     <button class="find-location" (click)="findMyLocation()">
       Find My Location
     </button>
+    <button *ngIf="!readonly" class="find-location" (click)="findMyLocation()"></button>
   <div #map class="map"></div>
   </div>

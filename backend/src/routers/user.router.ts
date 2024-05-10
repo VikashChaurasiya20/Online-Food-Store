@@ -65,7 +65,7 @@ res.send(generateTokenReponse(dbUser));
 
   const generateTokenReponse = (user : User) => {
     const token = jwt.sign({
-      email:user.email, isAdmin: user.isAdmin
+      id:user.id, email:user.email, isAdmin: user.isAdmin
     },"SomeRandomText",{
       expiresIn:"30d"
     });
